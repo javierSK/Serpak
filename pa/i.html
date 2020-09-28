@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/e.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+        <title>Serpak</title>
+    </head>
+    <body>
+        <!--navegador -->
+        <header>
+            <nav id="navbar">
+                <div class="logo">
+                  
+                  
+                   <img src="img/WhatsApp%20Image%202020-09-25%20at%207.50.25%20PM.jpeg" alt="">
+                    <span class="w">Serpak</span>
+                </div>
+                <ul class="nav-links">  
+                    <li><a href="#inicio">inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+                <div class="cosa">
+                    <div class="linea1"></div>
+                    <div class="linea2"></div>
+                    <div class="linea3"></div>
+                </div>
+            </nav> 
+        </header>
+
+        <!-- banner -->
+        <section class="banner" id="inicio">
+            <div class="contenido-banner">
+                <h1>Bienvenidos a Serpak</h1>
+                <a href="#nosotros">Conocenos</a>
+            </div>
+        </section>
+        <!-- -->
+
+        <!-- Nosotros -->
+
+        <!-- -->
+
+        <!--cosa -->
+
+        <section class="coso " id="nosotros">
+            <div class="cardo">
+
+                <div class="img_data">
+                    <div class="bac_img"></div>
+                    <div class="card_datail">
+
+                    </div>
+                </div>
+
+                <div class="date">
+                    <h1 class="title">Los detalles importan</h1>
+                    <h2 class="subtitle">Nuestros materiales</h2>
+                    <p class="descri">
+                        En Serpak trabajamos con los mejores materiales siempre manteniendo la calidad y respetos a estos.
+                        Entre nuestros materiales se encuentra el granito, cuarzo, mármol y ademas de una gran variedad de maderas.
+                    </p>
+                    
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Proyectos -->
+        <section class="e">
+            <div class="swiper-container ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/bnnr1.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/bnnr2.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/bnnr3.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/bnnr4.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/bnnr5.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/glr1.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/glr6.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/bnnr4.jpg" ></div> 
+                    </section>
+
+                <!-- -->
+                <section class="coso ">
+                    <div class="cardo carde">
+
+                        <div class="img_data">
+                            <div class="bac_imge"></div>
+                            <div class="card_datail">
+
+                            </div>
+                        </div>
+
+                        <div class="date">
+                            <h1 class="title">Obten el espacio que deseas</h1>
+                            <h2 class="subtitle">Habla con nosotros.</h2>
+                            <p class="descri">
+                               ¿Deseas remodelar tu cocina, dormitorio o algún mueble dentro de tu hogar?. Contactate con nosotros, te ayudaremos a conseguir ese espacio deseado.
+                            </p>
+                          
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- -->
+                <!-- galeria -->
+
+
+
+                <section class="galeria" id="proyectos">
+
+
+
+                    <h1>Nuestros Proyectos</h1>
+
+                    <div class="card-columns" id="galeria">
+
+                        <script>
+                            var imagenes = [1,2,3,4,5,6,7,8,9,10,11];
+                            var galeria = document.getElementById('galeria');
+
+                            for(imagen of imagenes){
+                                galeria.innerHTML += `
+<div class="card">
+<a href="" data-toggle="modal" data-target="#id${imagen}">
+<img src="img/${imagen}.jpg" alt="" class="card-img-top">
+                            </a>
+                            </div>
+
+<div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+                            </button>
+
+<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+<img src="img/${imagen}.jpg" alt="" >
+                            </div>
+                            </div>
+
+`}
+                        </script>
+                    </div>
+
+
+
+
+                </section>
+
+                <!-- -->
+
+                <!-- contacto -->
+
+
+                <section class="cntc" id="Contacto">
+
+                    <div class="contenedor" >
+
+                        <div class="contenidoC">
+                            <div class="contact-form">
+                                <h3>Contacto</h3>
+                                <form action="correo.php" method="post" enctype="multipart/form-data">
+                                    <p>
+                                        <label for="">Nombre Completo</label>
+                                        <input type="text" placeholder="Ej: Jorge Toloza" name="nombre">
+                                    </p>
+                                    <p>
+                                        <label for="">Correo Electronico</label>
+                                        <input type="email" placeholder="Ej: Contacto@gmail.com" name="email">
+                                    </p>
+                                    <p>
+                                        <label for="">Numero de Telefono</label>
+                                        <input type="tel" placeholder="Ej: +569 54480569" name="telefono">
+                                    </p>
+                                    <p>
+                                        <label for="">Asunto</label>
+                                        <input type="text" placeholder="Ej: Cotizacion" name="asunto">
+                                    </p>
+                                    <p class="block">
+                                        <label for="">Direccion</label>
+                                        <input type="text" placeholder="Ej: Paine, Acceso1 n°13" name="direccion">
+                                    </p>
+                                    <p class="block">
+                                        <label for="">Mensaje</label>
+                                        <textarea name="msg" placeholder="Detalla lo que necesites" ></textarea>
+                                    </p>
+                                    <p class="block">
+                                        <button type="submit">
+                                            Enviar
+                                        </button>
+                                    </p>
+                                </form>
+
+                            </div>
+                            <div class="contact-info">
+                                <h4>Envianos tu mensaje!</h4>
+                                <ul>
+
+                                    <p>¿Quieres comunicarte con nosotros?, ¡estas a un click de distanciá!, solo rellena nuestro formulario y nos pondremos en contacto contigo a la brevedad. </p>
+                                    <p>www.serpak.cl</p>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>  
+                </section>
+
+
+
+                <!-- -->
+
+                <!-- Footer-->
+                <footer>
+                    <div class="container-footer-all">
+
+
+                        <div class="contenedor-foo">
+                            <div class="columna1">
+                                <h1>Mas informacion de la compañia</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore similique vero quibusdam. A quis, quaerat magnam natus soluta facere nobis inventore sint culpa? Illum nemo totam saepe cum asperiores labore.</p>
+                            </div>
+
+                            <div class="columna2">
+                                <h1>Redes sociales</h1>
+                                <div class="fila">
+                                      <a href="https://www.facebook.com/outlet.paine.94/photos"><img src="img/face.png" alt=""> </a>
+                                    <label for="">Siguenos en Facebooka</label>
+                                </div>
+                                <div class="fila">
+                                     <a href="https://www.instagram.com/outlet_paine/?hl=es-la">  <img src="img/insta.png" alt="">  </a>
+                                    <label for="">Siguenos en instagram</label>
+                                </div>
+                            </div>
+
+                            <div class="columna3">
+                                <h1>Informacion contacto</h1>
+                                <div class="fila2">
+                                    <img src="img/casa.png" alt="">
+                                    <label for="">Direccion</label>
+                                </div>
+                                <div class="fila2">
+                                    <img src="img/fono.png" alt="">
+                                    <label for="">telefono</label>
+                                </div>
+                                <div class="fila2">
+                                    <img src="img/correo.png" alt="">
+                                    <label for="">Correo</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer">
+                        <div class="contenedor-web">
+                            <div class="copyright">
+                                Copyright © Página oficial SERPAK | <a href="">JsK Web</a> 
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+                
+                
+                
+                <div class="gotop">
+                    <div class="gotopbtn">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                </div>
+                <!-- -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                <script src="js/nav.js"></script>
+                <script src="js/ocultar.js"></script>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        effect: 'coverflow',
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: 'auto',
+                        coverflowEffect: {
+                            rotate: 20,
+                            stretch: 10,
+                            depth: 200,
+                            modifier: 1,
+                            slideShadows: true,
+                        },
+                        loop: true,autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                    });
+
+                    
+
+
+                </script>
+                </body>
+
+            </html>
